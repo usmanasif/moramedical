@@ -1,0 +1,45 @@
+@import '/styles/variables.module.scss';
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5rem;
+  flex-direction: column;
+
+  .eventsContainer {
+    width: 100%;
+    margin-top: 2rem;
+    display: table;
+
+    .card {
+      width: 21%;
+      float: left;
+      margin: 1rem;
+      padding: 1rem;
+
+      .dateBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 1rem;
+      }
+
+      .startDate {
+          color: $secondary;
+      }
+
+      .cardAction {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-bottom: -0.5rem;
+
+        .subscribedBtn {
+          background-color: $success;
+          color: $white;
+        }
+      }
+    }
+  }
+}
